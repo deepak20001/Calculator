@@ -20,8 +20,87 @@ class _HomePageState extends State<HomePage> {
             children: [
               Row(
                 children: [
-                  MyButton(),
-                  MyButton(),
+                  MyButton(
+                    title: "AC",
+                  ),
+                  MyButton(
+                    title: "+/-",
+                  ),
+                  MyButton(
+                    title: "%",
+                  ),
+                  MyButton(
+                    title: "/",
+                    colors: Colors.grey,
+                  ),
+                ],
+              ),
+              Row(
+                children: [
+                  MyButton(
+                    title: "7",
+                  ),
+                  MyButton(
+                    title: "8",
+                  ),
+                  MyButton(
+                    title: "0",
+                  ),
+                  MyButton(
+                    title: "x",
+                    colors: Colors.grey,
+                  ),
+                ],
+              ),
+              Row(
+                children: [
+                  MyButton(
+                    title: "4",
+                  ),
+                  MyButton(
+                    title: "5",
+                  ),
+                  MyButton(
+                    title: "6",
+                  ),
+                  MyButton(
+                    title: "-",
+                    colors: Colors.grey,
+                  ),
+                ],
+              ),
+              Row(
+                children: [
+                  MyButton(
+                    title: "1",
+                  ),
+                  MyButton(
+                    title: "2",
+                  ),
+                  MyButton(
+                    title: "3",
+                  ),
+                  MyButton(
+                    title: "+",
+                    colors: Colors.grey,
+                  ),
+                ],
+              ),
+              Row(
+                children: [
+                  MyButton(
+                    title: "0",
+                  ),
+                  MyButton(
+                    title: ".",
+                  ),
+                  MyButton(
+                    title: "DEL",
+                  ),
+                  MyButton(
+                    title: "=",
+                    colors: Colors.grey,
+                  ),
                 ],
               ),
               SizedBox(height: 10),
