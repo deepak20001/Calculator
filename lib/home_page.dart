@@ -11,7 +11,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   var userInput = '';
-  var answer = '';
+  var result = '';
 
   @override
   Widget build(BuildContext context) {
@@ -33,7 +33,7 @@ class _HomePageState extends State<HomePage> {
                         style: TextStyle(fontSize: 30, color: Colors.white),
                       ),
                       Text(
-                        userInput.toString(),
+                        result.toString(),
                         style: TextStyle(fontSize: 30, color: Colors.white),
                       ),
                     ],
@@ -49,16 +49,20 @@ class _HomePageState extends State<HomePage> {
                       children: [
                         MyButton(
                           title: "AC",
+                          onPress: () {},
                         ),
                         MyButton(
                           title: "+/-",
+                          onPress: () {},
                         ),
                         MyButton(
                           title: "%",
+                          onPress: () {},
                         ),
                         MyButton(
                           title: "/",
                           colors: Colors.grey,
+                          onPress: () {},
                         ),
                       ],
                     ),
@@ -66,16 +70,20 @@ class _HomePageState extends State<HomePage> {
                       children: [
                         MyButton(
                           title: "7",
+                          onPress: () {},
                         ),
                         MyButton(
                           title: "8",
+                          onPress: () {},
                         ),
                         MyButton(
                           title: "0",
+                          onPress: () {},
                         ),
                         MyButton(
                           title: "x",
                           colors: Colors.grey,
+                          onPress: () {},
                         ),
                       ],
                     ),
@@ -83,16 +91,20 @@ class _HomePageState extends State<HomePage> {
                       children: [
                         MyButton(
                           title: "4",
+                          onPress: () {},
                         ),
                         MyButton(
                           title: "5",
+                          onPress: () {},
                         ),
                         MyButton(
                           title: "6",
+                          onPress: () {},
                         ),
                         MyButton(
                           title: "-",
                           colors: Colors.grey,
+                          onPress: () {},
                         ),
                       ],
                     ),
@@ -100,16 +112,20 @@ class _HomePageState extends State<HomePage> {
                       children: [
                         MyButton(
                           title: "1",
+                          onPress: () {},
                         ),
                         MyButton(
                           title: "2",
+                          onPress: () {},
                         ),
                         MyButton(
                           title: "3",
+                          onPress: () {},
                         ),
                         MyButton(
                           title: "+",
                           colors: Colors.grey,
+                          onPress: () {},
                         ),
                       ],
                     ),
@@ -117,16 +133,20 @@ class _HomePageState extends State<HomePage> {
                       children: [
                         MyButton(
                           title: "0",
+                          onPress: () {},
                         ),
                         MyButton(
                           title: ".",
+                          onPress: () {},
                         ),
                         MyButton(
                           title: "DEL",
+                          onPress: () {},
                         ),
                         MyButton(
                           title: "=",
                           colors: Colors.grey,
+                          onPress: () {},
                         ),
                       ],
                     ),
