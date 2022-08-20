@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:math_expressions/math_expressions.dart';
 
 import 'components/my_button.dart';
 
@@ -49,20 +50,33 @@ class _HomePageState extends State<HomePage> {
                       children: [
                         MyButton(
                           title: "AC",
-                          onPress: () {},
+                          onPress: () {
+                            userInput = "";
+                            result = "";
+                            setState(() {});
+                          },
                         ),
                         MyButton(
                           title: "+/-",
-                          onPress: () {},
+                          onPress: () {
+                            userInput += "+/-";
+                            setState(() {});
+                          },
                         ),
                         MyButton(
                           title: "%",
-                          onPress: () {},
+                          onPress: () {
+                            userInput += "%";
+                            setState(() {});
+                          },
                         ),
                         MyButton(
                           title: "/",
                           colors: Colors.grey,
-                          onPress: () {},
+                          onPress: () {
+                            userInput += "/";
+                            setState(() {});
+                          },
                         ),
                       ],
                     ),
@@ -70,20 +84,32 @@ class _HomePageState extends State<HomePage> {
                       children: [
                         MyButton(
                           title: "7",
-                          onPress: () {},
+                          onPress: () {
+                            userInput += "7";
+                            setState(() {});
+                          },
                         ),
                         MyButton(
                           title: "8",
-                          onPress: () {},
+                          onPress: () {
+                            userInput += "8";
+                            setState(() {});
+                          },
                         ),
                         MyButton(
                           title: "0",
-                          onPress: () {},
+                          onPress: () {
+                            userInput += "0";
+                            setState(() {});
+                          },
                         ),
                         MyButton(
                           title: "x",
                           colors: Colors.grey,
-                          onPress: () {},
+                          onPress: () {
+                            userInput += "x";
+                            setState(() {});
+                          },
                         ),
                       ],
                     ),
@@ -91,20 +117,32 @@ class _HomePageState extends State<HomePage> {
                       children: [
                         MyButton(
                           title: "4",
-                          onPress: () {},
+                          onPress: () {
+                            userInput += "4";
+                            setState(() {});
+                          },
                         ),
                         MyButton(
                           title: "5",
-                          onPress: () {},
+                          onPress: () {
+                            userInput += "5";
+                            setState(() {});
+                          },
                         ),
                         MyButton(
                           title: "6",
-                          onPress: () {},
+                          onPress: () {
+                            userInput += "6";
+                            setState(() {});
+                          },
                         ),
                         MyButton(
                           title: "-",
                           colors: Colors.grey,
-                          onPress: () {},
+                          onPress: () {
+                            userInput += "-";
+                            setState(() {});
+                          },
                         ),
                       ],
                     ),
@@ -112,20 +150,32 @@ class _HomePageState extends State<HomePage> {
                       children: [
                         MyButton(
                           title: "1",
-                          onPress: () {},
+                          onPress: () {
+                            userInput += "1";
+                            setState(() {});
+                          },
                         ),
                         MyButton(
                           title: "2",
-                          onPress: () {},
+                          onPress: () {
+                            userInput += "2";
+                            setState(() {});
+                          },
                         ),
                         MyButton(
                           title: "3",
-                          onPress: () {},
+                          onPress: () {
+                            userInput += "3";
+                            setState(() {});
+                          },
                         ),
                         MyButton(
                           title: "+",
                           colors: Colors.grey,
-                          onPress: () {},
+                          onPress: () {
+                            userInput += "+";
+                            setState(() {});
+                          },
                         ),
                       ],
                     ),
@@ -133,11 +183,17 @@ class _HomePageState extends State<HomePage> {
                       children: [
                         MyButton(
                           title: "0",
-                          onPress: () {},
+                          onPress: () {
+                            userInput += "0";
+                            setState(() {});
+                          },
                         ),
                         MyButton(
                           title: ".",
-                          onPress: () {},
+                          onPress: () {
+                            userInput += ".";
+                            setState(() {});
+                          },
                         ),
                         MyButton(
                           title: "DEL",
@@ -146,7 +202,9 @@ class _HomePageState extends State<HomePage> {
                         MyButton(
                           title: "=",
                           colors: Colors.grey,
-                          onPress: () {},
+                          onPress: () {
+                            setState(() {});
+                          },
                         ),
                       ],
                     ),

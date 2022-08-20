@@ -16,6 +16,7 @@ class MyButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
       child: InkWell(
+        onTap: onPress,
         child: Padding(
           padding: const EdgeInsets.all(6.0),
           child: Container(
