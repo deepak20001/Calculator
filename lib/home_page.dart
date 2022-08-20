@@ -18,7 +18,8 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
 //-----------------------------------------------------------
     void equalPress() {
-      String finalUserInput = userInput.replaceAll("x", "*");
+      String finalUserInput = userInput;
+      finalUserInput = userInput.replaceAll("x", "*");
       Parser p = Parser();
       Expression exp = p.parse(finalUserInput);
       ContextModel contextmodel = ContextModel();
