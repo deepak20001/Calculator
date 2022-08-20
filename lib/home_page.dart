@@ -16,6 +16,17 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
+
+//-----------------------------------------------------------
+    void equalPress() {
+      Parser p = Parser();
+      Expression exp = p.parse(userInput);
+      ContextModel contextmodel = ContextModel();
+
+      double eval = exp.evaluate(EvaluationType.REAL, contextmodel);
+      result = eval.toString();
+    }
+
     return Scaffold(
       backgroundColor: Colors.black,
       body: SafeArea(
@@ -203,6 +214,7 @@ class _HomePageState extends State<HomePage> {
                           title: "=",
                           colors: Colors.grey,
                           onPress: () {
+                            equalPress();
                             setState(() {});
                           },
                         ),
