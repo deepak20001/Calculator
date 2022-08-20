@@ -16,7 +16,6 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-
 //-----------------------------------------------------------
     void equalPress() {
       Parser p = Parser();
@@ -208,7 +207,11 @@ class _HomePageState extends State<HomePage> {
                         ),
                         MyButton(
                           title: "DEL",
-                          onPress: () {},
+                          onPress: () {
+                            userInput =
+                                userInput.substring(0, userInput.length - 1);
+                            setState(() {});
+                          },
                         ),
                         MyButton(
                           title: "=",
