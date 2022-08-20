@@ -40,14 +40,24 @@ class _HomePageState extends State<HomePage> {
                 child: Padding(
                   padding: const EdgeInsets.symmetric(vertical: 20),
                   child: Column(
+                    mainAxisAlignment: MainAxisAlignment.end,
                     children: [
-                      Text(
-                        userInput.toString(),
-                        style: TextStyle(fontSize: 30, color: Colors.white),
+                      Align(
+                        alignment: Alignment.centerRight,
+                        child: Text(
+                          userInput.toString(),
+                          style: TextStyle(fontSize: 30, color: Colors.white),
+                        ),
                       ),
-                      Text(
-                        result.toString(),
-                        style: TextStyle(fontSize: 30, color: Colors.white),
+                      SizedBox(
+                        height: 15,
+                      ),
+                      Align(
+                        alignment: Alignment.centerRight,
+                        child: Text(
+                          result.toString(),
+                          style: TextStyle(fontSize: 30, color: Colors.white),
+                        ),
                       ),
                     ],
                   ),
